@@ -111,7 +111,7 @@ export const ProjectList = [
     description: "A funny website to ask your GF to accept your Valentine req",
     tech_stack: ["NextJs", "Typescript"],
     github_url: "https://github.com/deathracer321/",
-    demo_url: "https://7jzchp-3001.csb.app/",
+    demo_url: "https://valentine-link.vercel.app/",
   },
 ];
 
@@ -245,6 +245,10 @@ export const stackList = [
   {
     img: "https://img.icons8.com/?size=100&id=v7BkjmFjgswL&format=png&color=000000",
     name: "debugging",
-  }
+  },
+  {
+    img: "https://img.icons8.com/?size=100&id=r9QJ0VFFrn7T&format=png&color=000000",
+    name: "Chakra UI",
+  },
   
 ];

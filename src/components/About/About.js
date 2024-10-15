@@ -40,7 +40,11 @@ const PortfolioSummary = () => {
   return (
     <div style={summaryStyle}>
       <div>
+      <ScrollAnimation animateIn="fadeInLeft">
         <h2 style={titleStyle}>Professional Summary</h2>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInRight">
+
         <p style={paragraphStyle}>
           I am a dedicated{" "}
           <span style={highlightStyle}>Full Stack R&D Developer</span> with over
@@ -52,10 +56,16 @@ const PortfolioSummary = () => {
           Node.js, Firebase, and more. I thrive in environments that value hard
           work, dedication, and innovation.
         </p>
+        </ScrollAnimation>
       </div>
 
       <div>
+      <ScrollAnimation animateIn="fadeInLeft">
+        
         <h2 style={titleStyle}>Skills and Expertise</h2>
+      </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInRight">
+
         <p style={paragraphStyle}>
           I excel in a wide range of technical skills, with primary expertise in{" "}
           <span style={highlightStyle}>React</span> and{" "}
@@ -68,10 +78,16 @@ const PortfolioSummary = () => {
           various APIs, including the OpenAI API for integrating AI capabilities
           into projects.
         </p>
+        </ScrollAnimation>
       </div>
 
       <div>
+      <ScrollAnimation animateIn="fadeInLeft">
+
         <h2 style={titleStyle}>Professional Experience</h2>
+      </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInRight">
+
         <p style={paragraphStyle}>
           I have worked with prominent companies such as{" "}
           <span style={highlightStyle}>HCL Technologies</span> and{" "}
@@ -84,10 +100,16 @@ const PortfolioSummary = () => {
           Electronics, building responsive applications, integrating APIs, and
           ensuring robust security measures.
         </p>
+        </ScrollAnimation>
       </div>
 
       <div>
+      <ScrollAnimation animateIn="fadeInLeft">
+
         <h2 style={titleStyle}>Education and Certifications</h2>
+      </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInRight">
+
         <p style={paragraphStyle}>
           I hold a{" "}
           <span style={highlightStyle}>Bachelor of Science in Computing</span>{" "}
@@ -100,10 +122,16 @@ const PortfolioSummary = () => {
           Fundamentals from various prestigious platforms like Udemy and Free
           Code Camp.
         </p>
+        </ScrollAnimation>
       </div>
 
       <div>
+      <ScrollAnimation animateIn="fadeInLeft">
+
         <h2 style={titleStyle}>Personal Interests</h2>
+      </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInRight">
+
         <p style={paragraphStyle}>
           My professional interests revolve around the convergence of
           electronics and software, with a particular focus on cutting-edge
@@ -115,6 +143,7 @@ const PortfolioSummary = () => {
           also serves as a constant source of motivation, providing me with a
           profound sense of fulfillment and satisfaction.
         </p>
+        </ScrollAnimation>
       </div>
     </div>
   );
@@ -130,18 +159,18 @@ function About() {
             <Image src="/man-svgrepo-com.svg" alt="man-svgrepo" />
           </ScrollAnimation>
           <div className="AboutBio">
-            <ScrollAnimation animateIn="fadeInLeft">
+            <ScrollAnimation animateIn="fadeInRight">
               Hello! My name is <strong>Harish S</strong>. I'm from India for
               the past twenty five years. During my time here, I gained valuable
               experience through various advanced-level positions, which greatly
               enhanced my work ethic, communication skills, and adaptability.
             </ScrollAnimation>
             <br />
-            <ScrollAnimation animateIn="fadeInLeft">
+            
               <PortfolioSummary />
-            </ScrollAnimation>
+            
             <br />
-            <ScrollAnimation animateIn="fadeInLeft">
+            <ScrollAnimation animateIn="fadeInRight">
               <div className="tagline2">
                 I have become confident using the following technologies:
               </div>
@@ -149,7 +178,7 @@ function About() {
             <br />
             <Technologies>
               {stackList.map((stack, index) => (
-                <ScrollAnimation animateIn="fadeInLeft" key={index}>
+                <ScrollAnimation animateIn={index%2==0 ? "fadeInLeft" : "fadeInRight"} key={index}>
                   <Tech key={index} className="tech">
                     <TechImg src={stack.img} alt={stack.name} />
                     <TechName>{stack.name}</TechName>
