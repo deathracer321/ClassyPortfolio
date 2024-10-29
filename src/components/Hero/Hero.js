@@ -28,7 +28,7 @@ function Hero() {
       <HeroContainer>
         <HeroWrapper>
           <HeroLeft>
-            <ScrollAnimation animateIn="fadeIn">
+            <ScrollAnimation animateIn="fadeIn" style={{ minHeight: "14rem" }}>
               <TypeAnimation
                 cursor={false}
                 sequence={["Hi, I'm Harish S", () => setShowSubtitle(true)]}

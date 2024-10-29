@@ -34,6 +34,14 @@ export const ProjectList = [
     demo_url: "https://spotify-clone-95623.web.app",
   },
   {
+    img: "/projectImages/percentCalculator.png",
+    title: "Percentage Calculator",
+    description: "No more calculator for calculating percentages, here is the easy one",
+    tech_stack: ["React", "Bootstrap", "Firebase"],
+    github_url: "https://github.com/deathracer321/",
+    demo_url: "https://percentcalculator-harish.web.app/",
+  },
+  {
     img: "/projectImages/AmazonClone.png",
     title: "Amazon Clone",
     description: "Get glimpse of a e-commerce app clone",
